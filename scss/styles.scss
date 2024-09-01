@@ -27,13 +27,17 @@ header {
     margin: 24px;
 
     @media screen and (min-width:48rem) {
-        margin: 39px;
+        margin: 39px 39px 60px;
     }
 }
 
 .first-sec {
+    margin-top: 40px;
+    margin-bottom: 24px;
+
     @media screen and (min-width:48rem) {
         display: flex;
+        margin-bottom: 40px;
     }
 }
 
@@ -41,9 +45,8 @@ header {
     margin: 0 24px;
 
     @media screen and (min-width:48rem) {
-        padding: 39px;
-        margin-right: 30px;
-        width: rem(340);
+        margin: 60px 39px;
+        max-width: rem(340);
     }
 }
 
@@ -51,7 +54,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 32px;
     margin-bottom: 64px;
+
+    @media screen and (min-width:48rem) {
+        margin-bottom: 0;
+    }
 }
 
 .mainimg-cont {
@@ -59,12 +67,18 @@ header {
     border-radius: 20px 0 0 20px;
     overflow: hidden;
     object-fit: cover;
-    margin-bottom: 24px;
     margin-left: 24px;
+
+    @media screen and (min-width:48rem) {
+        position: relative;
+        height: 425px;
+        margin: 0;
+    }
 }
 
 .keyboardimg {
     height: 100%;
+
 }
 
 .gallery {
@@ -72,21 +86,31 @@ header {
     overflow: hidden;
     display: flex;
     margin-bottom: 75px;
+
+    @media screen and (min-width:48rem) {
+        height: 320px;
+        margin: 0 39px 75px;
+        justify-content: space-between;
+    }
 }
 
 .img-cont1 {
     width: 129px;
-    height: 193px;
+    height: 100%;
     border-radius: 20px;
     margin-right: 24px;
     margin-left: -22px;
     overflow: hidden;
     position: relative;
+
+    @media screen and (min-width:48rem) {
+        margin-left: 0;
+        width: 214px;
+    }
 }
 
 .img1 {
     height: 100%;
-    object-position: left;
 }
 
 .img-cont1::before {
@@ -99,13 +123,16 @@ header {
     width: inherit;
     overflow: hidden;
     border-radius: inherit;
-
 }
 
 .img-cont2 {
     border-radius: 20px;
     width: 220px;
     overflow: hidden;
+
+    @media screen and (min-width:48rem) {
+        width: 445px;
+    }
 }
 
 .img2 {
@@ -115,18 +142,56 @@ header {
 .second-sec {
     text-align: center;
     margin: 0 24px 95px;
+
+    @media screen and (min-width:48rem) {
+        margin: 0 39px 142px;
+    }
 }
 
 .info {
     margin-bottom: 110px;
+
+    @media screen and (min-width:48rem) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+    }
+}
+
+.info p {
+    @media screen and (min-width:48rem) {
+        width: fit-content;
+    }
+}
+
+.cards {
+    @media screen and (min-width:48rem) {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: start;
+    }
 }
 
 .card {
     margin-bottom: 64px;
+
+    @media screen and (min-width:48rem) {
+        max-width: 50%;
+        //margin-right: 45px;
+    }
 }
 
 .card:last-of-type {
     margin-bottom: 0;
+}
+
+.card p {
+
+    @media screen and (min-width:48rem) {
+        padding-right: 60px;
+    }
+
 }
 
 .icon-cont {
@@ -138,6 +203,10 @@ header {
     align-items: center;
     border-radius: 8px;
     margin: 0 auto 48px;
+
+    @media screen and (min-width:48rem) {
+        margin: 0 0 48px;
+    }
 }
 
 footer {
