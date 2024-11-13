@@ -36,6 +36,10 @@ h2 {
     @media screen and (min-width:48rem) {
         margin: 0;
     }
+
+    @media screen and (min-width: 80rem) {
+        margin-bottom: 27px;
+    }
 }
 
 h3 {
@@ -46,6 +50,10 @@ h3 {
     @media screen and (min-width:48rem) {
         margin: 0 0 24px;
         padding-right: 140px;
+    }
+
+    @media screen and (min-width:80rem) {
+        padding-right: 50px;
     }
 }
 

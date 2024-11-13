@@ -39,11 +39,13 @@ header {
     }
 }
 
-main {
+.bg-cont {
+    width: 100%;
+
     @media screen and (min-width: 80rem) {
-        background-image: url(../assets/shared/pattern-square.svg);
+        background-image: url(../assets/shared/pattern-square.svg), url(../assets/shared/pattern-square.svg);
         background-repeat: no-repeat;
-        background-position: right -10% top;
+        background-position: right -10% top, left -10% bottom;
     }
 }
 
@@ -136,6 +138,7 @@ main {
 
     @media screen and (min-width:80rem) {
         height: 480px;
+        margin: 0;
     }
 }
 
@@ -189,22 +192,30 @@ main {
 }
 
 .second-sec {
-    text-align: center;
-    margin: 0 24px 95px;
-
-    @media screen and (min-width:48rem) {
-        margin: 0 39px 142px;
+    @media screen and (min-width:80rem) {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 165px 165px;
     }
 }
 
 .info {
-    margin-bottom: 110px;
+    text-align: center;
+    margin: 0 24px 110px;
 
     @media screen and (min-width:48rem) {
+        margin: 0 39px 142px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-align: start;
+    }
+
+    @media screen and (min-width:80rem) {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        width: 16rem;
     }
 }
 
@@ -215,10 +226,20 @@ main {
 }
 
 .cards {
+    text-align: center;
+    margin: 0 24px 95px;
+
     @media screen and (min-width:48rem) {
+        margin: 0 39px 142px;
         display: flex;
         flex-wrap: wrap;
         text-align: start;
+    }
+
+    @media screen and (min-width:80rem) {
+        margin: 0 165px 128px;
+        flex-wrap: nowrap;
+        gap: 30px;
     }
 }
 
@@ -226,19 +247,30 @@ main {
     margin-bottom: 64px;
 
     @media screen and (min-width:48rem) {
-        max-width: 50%;
+        width: 50%;
         //margin-right: 45px;
+    }
+
+    @media screen and (min-width:80rem) {
+        max-width: 25%;
+
     }
 }
 
 .card:last-of-type {
     margin-bottom: 0;
+
+
 }
 
 .card p {
 
     @media screen and (min-width:48rem) {
         padding-right: 60px;
+    }
+
+    @media screen and (min-width:80rem) {
+        padding: 0;
     }
 
 }

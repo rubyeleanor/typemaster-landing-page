@@ -44,6 +44,11 @@ h2 {
     margin: 0;
   }
 }
+@media screen and (min-width: 80rem) {
+  h2 {
+    margin-bottom: 27px;
+  }
+}
 
 h3 {
   line-height: 1.75rem;
@@ -54,6 +59,11 @@ h3 {
   h3 {
     margin: 0 0 24px;
     padding-right: 140px;
+  }
+}
+@media screen and (min-width: 80rem) {
+  h3 {
+    padding-right: 50px;
   }
 }
 
@@ -161,11 +171,14 @@ header {
   }
 }
 
+.bg-cont {
+  width: 100%;
+}
 @media screen and (min-width: 80rem) {
-  main {
-    background-image: url(../assets/shared/pattern-square.svg);
+  .bg-cont {
+    background-image: url(../assets/shared/pattern-square.svg), url(../assets/shared/pattern-square.svg);
     background-repeat: no-repeat;
-    background-position: right -10% top;
+    background-position: right -10% top, left -10% bottom;
   }
 }
 
@@ -269,6 +282,7 @@ header {
 @media screen and (min-width: 80rem) {
   .gallery {
     height: 480px;
+    margin: 0;
   }
 }
 
@@ -324,25 +338,33 @@ header {
   height: 100%;
 }
 
-.second-sec {
-  text-align: center;
-  margin: 0 24px 95px;
-}
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 80rem) {
   .second-sec {
-    margin: 0 39px 142px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 165px 165px;
   }
 }
 
 .info {
-  margin-bottom: 110px;
+  text-align: center;
+  margin: 0 24px 110px;
 }
 @media screen and (min-width: 48rem) {
   .info {
+    margin: 0 39px 142px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: start;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 16rem;
   }
 }
 
@@ -353,11 +375,23 @@ header {
   }
 }
 
+.cards {
+  text-align: center;
+  margin: 0 24px 95px;
+}
 @media screen and (min-width: 48rem) {
   .cards {
+    margin: 0 39px 142px;
     display: flex;
     flex-wrap: wrap;
     text-align: start;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .cards {
+    margin: 0 165px 128px;
+    flex-wrap: nowrap;
+    gap: 30px;
   }
 }
 
@@ -366,7 +400,12 @@ header {
 }
 @media screen and (min-width: 48rem) {
   .card {
-    max-width: 50%;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .card {
+    max-width: 25%;
   }
 }
 
@@ -377,6 +416,11 @@ header {
 @media screen and (min-width: 48rem) {
   .card p {
     padding-right: 60px;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .card p {
+    padding: 0;
   }
 }
 
