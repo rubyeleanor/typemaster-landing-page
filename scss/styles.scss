@@ -18,26 +18,46 @@ body {
     @media screen and (min-width:48rem) {
         width: rem(768);
     }
+
+    @media screen and (min-width: 80rem) {
+        width: rem(1440);
+    }
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 24px;
+    margin: 24px 24px 64px;
 
     @media screen and (min-width:48rem) {
         margin: 39px 39px 60px;
     }
+
+    @media screen and (min-width: 80rem) {
+        margin: 55px 165px 85px;
+    }
+}
+
+main {
+    @media screen and (min-width: 80rem) {
+        background-image: url(../assets/shared/pattern-square.svg);
+        background-repeat: no-repeat;
+        background-position: right -10% top;
+    }
 }
 
 .first-sec {
-    margin-top: 40px;
     margin-bottom: 24px;
 
     @media screen and (min-width:48rem) {
         display: flex;
         margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 80rem) {
+        margin: 0 165px 30px;
+        justify-content: space-between;
     }
 }
 
@@ -47,6 +67,17 @@ header {
     @media screen and (min-width:48rem) {
         margin: 60px 39px;
         max-width: rem(340);
+    }
+
+    @media screen and (min-width: 80rem) {
+        margin: 60px 0 100px;
+        max-width: rem(445);
+    }
+}
+
+.intro p {
+    @media screen and (min-width: 80rem) {
+        font-size: rem(18);
     }
 }
 
@@ -59,6 +90,11 @@ header {
 
     @media screen and (min-width:48rem) {
         margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 80rem) {
+        margin-top: 40px;
+        max-width: rem(340);
     }
 }
 
@@ -74,11 +110,16 @@ header {
         height: 425px;
         margin: 0;
     }
+
+    @media screen and (min-width: 80rem) {
+        height: 480px;
+        width: 540px;
+        border-radius: 20px;
+    }
 }
 
 .keyboardimg {
     height: 100%;
-
 }
 
 .gallery {
@@ -91,6 +132,10 @@ header {
         height: 320px;
         margin: 0 39px 75px;
         justify-content: space-between;
+    }
+
+    @media screen and (min-width:80rem) {
+        height: 480px;
     }
 }
 
@@ -106,6 +151,10 @@ header {
     @media screen and (min-width:48rem) {
         margin-left: 0;
         width: 214px;
+    }
+
+    @media screen and (min-width:80rem) {
+        width: 255px;
     }
 }
 
